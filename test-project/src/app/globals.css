@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  /* color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
+}
+
+.product_item.active {
+  border-color: #333;
+}
+
+.cart_item {
+  display: none;
+}
+
+.open .cart_item {
+  display: block;
+}
+
+.open > p {
+  background-color: #fff;
+  border-top: 1px solid #c5c5c5;
+  border-left: 1px solid #c5c5c5;
+  border-right: 1px solid #c5c5c5;
+}
